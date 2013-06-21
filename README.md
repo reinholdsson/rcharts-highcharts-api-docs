@@ -1,3 +1,2 @@
-
-- Code: `gh-pages` branch.
+- Code: see [gh-pages](https://github.com/reinholdsson/rcharts-highcharts-api-docs/tree/gh-pages) branch
 - Results: [http://reinholdsson.github.io/rcharts-highcharts-api-docs/](http://reinholdsson.github.io/rcharts-highcharts-api-docs/)
