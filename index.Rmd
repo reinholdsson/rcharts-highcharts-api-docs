@@ -1,0 +1,164 @@
+<style>rChart {width: 600px; height: 400px;}</style>
+
+```{r, echo = F, message = F, cache = F}
+require(rCharts)
+options(RCHART_WIDTH = 600, RCHART_HEIGHT = 400)
+knitr::opts_chunk$set(comment = NA, results = 'asis', tidy = F, message = F, warning = F)
+```
+
+## Highcharts
+
+Highcharts is a JavaScript charting library based on SVG and VML rendering by Highsoft Solutions AS. It is not free for commercial use, so make sure you have a valid license. For more information, see [http://www.highcharts.com/](http://www.highcharts.com/).
+
+### Class
+
+#### Highcharts ([api](http://api.highcharts.com/highcharts#Highcharts))
+
+To initialize a new chart object one simply write
+
+```{r}
+obj <- Highcharts$new()
+```
+
+*Hint: An alternative is to use the custom wrapper function `hPlot`.*
+
+### Methods
+
+The [Highcharts API Reference](http://api.highcharts.com/highcharts) has an extensive documentation of all methods in the Highcharts javascript library, those implemented in `rCharts` here follows with examples.
+
+#### chart ([api](http://api.highcharts.com/highcharts#chart))
+
+We set the `type` and `height` with the `chart` method.
+
+```{r}
+obj$chart(type = "column", height = 300)
+```
+
+As default, `line` is used as the chart type.
+
+#### series ([api](http://api.highcharts.com/highcharts#series)|[docs](http://docs.highcharts.com/#series))
+
+```{r}
+obj$series(data = 1:3)
+```
+```{r, echo=F}
+obj$print(tempfile(), include_assets = TRUE, cdn = TRUE)
+```
+
+It is possible to add another data series by re-using `series` on the same object. While we in the above example only provided the y-coordinates we could also specify the x-coordinates (otherwise starting from 0), as below:
+
+
+
+```{r}
+obj$series(data = list(c(0,2), c(1,1), c(2,3)), name = "foo")
+```
+
+We also named it by using the `name` argument.
+
+The third alternative to add data is perhaps the most useful for more advanced charts, for example when using the `tooltip` method as one might be interested to show additional data in the chart, other than x- and y-values. 
+
+```{r}
+obj$series(data = list(
+  list(x = 0, y = 0, foo = "a"),
+  list(x = 1, y = 1, foo = "b"),
+  list(x = 2, y = 3, foo = "c")
+), type = "spline")
+```
+
+As noticed, the chart `type` may as well be included as an attribute, which makes it possible to combine several chart types within the same chart. The series are layered on each other in the same order as they are added, therefore the `spline` will be shown on top of the `columns`.
+
+#### xAxis ([api](http://api.highcharts.com/highcharts#xAxis)|[docs](http://docs.highcharts.com/#axes))
+
+```{r}
+obj$xAxis(categories = c("apple", "orange", "pear"))
+```
+
+#### yAxis ([api](http://api.highcharts.com/highcharts#yAxis)|[docs](http://docs.highcharts.com/#axes))
+
+```{r}
+obj$yAxis(title = list(text = "Number"))
+```
+
+```{r, echo=F}
+obj$print(tempfile())
+```
+
+#### colors ([api](http://api.highcharts.com/highcharts#colors)|[docs](http://docs.highcharts.com/#colors))
+
+```{r}
+obj$colors(
+  'rgba(223, 83, 83, .75)', 
+  'rgba(60, 179, 113, .75)', 
+  'rgba(238, 130, 238, .75)'
+)
+```
+
+#### credits ([docs](http://docs.highcharts.com/#credits))
+
+```{r}
+obj$credits(text = "Created with rCharts", href = "http://rcharts.io")
+```
+
+#### tooltip ([api](http://api.highcharts.com/highcharts#tooltip)|[docs](http://docs.highcharts.com/#tooltip))
+
+```{r}
+obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + this.y; } !#")
+```
+
+```{r, echo=F}
+obj$print(tempfile())
+```
+
+#### labels ([docs](http://docs.highcharts.com/#labels))
+
+```{r}
+obj$labels(items = list(
+  list(
+    html = "An interactive example of Highcharts in rCharts", 
+    style = list(left = "20px", top = "20px")
+  )
+))
+```
+
+The `items` argument takes an array of items, and that is why we use `list` twice.
+
+
+```{r, echo=F}
+obj$print(tempfile())
+```
+
+#### legend ([docs](http://docs.highcharts.com/#legend))
+
+```{r}
+obj$legend(
+  align = 'right', 
+  verticalAlign = 'middle', 
+  layout = 'vertical'
+)
+```
+
+```{r, echo=F}
+obj$print(tempfile())
+```
+
+#### plotOptions
+
+...
+
+#### title
+
+...
+
+#### subtitle
+
+...
+
+### Additional methods
+
+Although we have covered the most commonly used methods, there are still some that we have not described (that might be of interested to more advanced users):
+  - exporting ([docs](http://docs.highcharts.com/#exporting))
+  - loading ([docs](http://docs.highcharts.com/#loading))
+  - navigation ([docs](http://docs.highcharts.com/#navigation))
+  - pane ([docs](http://docs.highcharts.com/#pane))
+
+For more information on how to use these, see the Highcharts API documentation page.
