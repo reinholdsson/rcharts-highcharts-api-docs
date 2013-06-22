@@ -165,15 +165,32 @@ obj$print(tempfile())
 
 #### plotOptions
 
-...
+```{r}
+obj$plotOptions(
+  column = list(stacking = "normal"),
+  spline = list(dashStyle = "Dash")
+)
+```
+
+```{r, echo=F}
+obj$print(tempfile())
+```
 
 #### title
 
-...
+```{r}
+obj$title(text = "Chart Title")
+```
 
 #### subtitle
 
-...
+```{r}
+obj$subtitle(text = "This is a subtitle")
+```
+
+```{r, echo=F}
+obj$print(tempfile())
+```
 
 ### Additional methods
 

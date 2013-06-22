@@ -47,12 +47,12 @@ obj$series(data = 1:3)
 <script type='text/javascript' src=http://code.jquery.com/jquery-1.9.1.min.js></script>
 <script type='text/javascript' src=http://code.highcharts.com/highcharts.js></script>
 <script type='text/javascript' src=http://code.highcharts.com/highcharts-more.js></script>
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b95c67663b' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b95c67663b",
 "width":    600,
 "height":    400,
 "credits": {
@@ -70,14 +70,14 @@ obj$series(data = 1:3)
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b95c67663b" 
 },
 "series": [
  {
  "data": [ 1, 2, 3 ] 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b95c67663b" 
 });
         });
     })(jQuery);
@@ -151,12 +151,12 @@ obj$yAxis(title = list(text = "Number"))
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9868dae2' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9868dae2",
 "width":    600,
 "height":    400,
 "credits": {
@@ -174,7 +174,7 @@ obj$yAxis(title = list(text = "Number"))
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9868dae2" 
 },
 "series": [
  {
@@ -209,7 +209,7 @@ obj$yAxis(title = list(text = "Number"))
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9868dae2",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 } 
@@ -248,12 +248,12 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b91bfa2fbe' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b91bfa2fbe",
 "width":    600,
 "height":    400,
 "credits": {
@@ -271,7 +271,7 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b91bfa2fbe" 
 },
 "series": [
  {
@@ -306,7 +306,7 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b91bfa2fbe",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -342,12 +342,12 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b94654714b' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b94654714b",
 "width":    600,
 "height":    400,
 "credits": {
@@ -365,7 +365,7 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b94654714b" 
 },
 "series": [
  {
@@ -400,7 +400,7 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b94654714b",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -443,12 +443,12 @@ obj$legend(
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b951da16ff' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b951da16ff",
 "width":    600,
 "height":    400,
 "credits": {
@@ -466,7 +466,7 @@ obj$legend(
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b951da16ff" 
 },
 "series": [
  {
@@ -501,7 +501,7 @@ obj$legend(
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b951da16ff",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -538,15 +538,237 @@ obj$legend(
 
 #### plotOptions
 
-...
+
+```r
+obj$plotOptions(
+  column = list(stacking = "normal"),
+  spline = list(dashStyle = "Dash")
+)
+```
+
+
+
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9451be954' class='rChart highcharts'></div>
+<script type='text/javascript'>
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9451be954",
+"width":    600,
+"height":    400,
+"credits": {
+ "text": "Created with rCharts",
+"href": "http://rcharts.io" 
+},
+"title": {
+ "text": null 
+},
+"yAxis": {
+ "title": {
+ "text": "Number" 
+} 
+},
+"chart": {
+ "type": "column",
+"height":    300,
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9451be954" 
+},
+"series": [
+ {
+ "data": [ 1, 2, 3 ] 
+},
+{
+ "data": [
+ [      0,      2 ],
+[      1,      1 ],
+[      2,      3 ] 
+],
+"name": "foo" 
+},
+{
+ "data": [
+ {
+ "x":      0,
+"y":      0,
+"foo": "a" 
+},
+{
+ "x":      1,
+"y":      1,
+"foo": "b" 
+},
+{
+ "x":      2,
+"y":      3,
+"foo": "c" 
+} 
+],
+"type": "spline" 
+} 
+],
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b9451be954",
+"xAxis": {
+ "categories": [ "apple", "orange", "pear" ] 
+},
+"colors": [
+ "rgba(223, 83, 83, .75)",
+"rgba(60, 179, 113, .75)",
+"rgba(238, 130, 238, .75)" 
+],
+"tooltip": {
+ "useHTML": true,
+"formatter":  function() { return this.x + ', ' + this.y; }  
+},
+"labels": {
+ "items": [
+ {
+ "html": "An interactive example of Highcharts in rCharts",
+"style": {
+ "left": "20px",
+"top": "20px" 
+} 
+} 
+] 
+},
+"legend": {
+ "align": "right",
+"verticalAlign": "middle",
+"layout": "vertical" 
+},
+"plotOptions": {
+ "column": {
+ "stacking": "normal" 
+},
+"spline": {
+ "dashStyle": "Dash" 
+} 
+} 
+});
+        });
+    })(jQuery);
+</script>
+
 
 #### title
 
-...
+
+```r
+obj$title(text = "Chart Title")
+```
+
 
 #### subtitle
 
-...
+
+```r
+obj$subtitle(text = "This is a subtitle")
+```
+
+
+
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b92b73ad3e' class='rChart highcharts'></div>
+<script type='text/javascript'>
+    (function($){
+        $(function () {
+            var chart = new Highcharts.Chart({
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b92b73ad3e",
+"width":    600,
+"height":    400,
+"credits": {
+ "text": "Created with rCharts",
+"href": "http://rcharts.io" 
+},
+"title": {
+ "text": "Chart Title" 
+},
+"yAxis": {
+ "title": {
+ "text": "Number" 
+} 
+},
+"chart": {
+ "type": "column",
+"height":    300,
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b92b73ad3e" 
+},
+"series": [
+ {
+ "data": [ 1, 2, 3 ] 
+},
+{
+ "data": [
+ [      0,      2 ],
+[      1,      1 ],
+[      2,      3 ] 
+],
+"name": "foo" 
+},
+{
+ "data": [
+ {
+ "x":      0,
+"y":      0,
+"foo": "a" 
+},
+{
+ "x":      1,
+"y":      1,
+"foo": "b" 
+},
+{
+ "x":      2,
+"y":      3,
+"foo": "c" 
+} 
+],
+"type": "spline" 
+} 
+],
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmpjFkkEY/file63b92b73ad3e",
+"xAxis": {
+ "categories": [ "apple", "orange", "pear" ] 
+},
+"colors": [
+ "rgba(223, 83, 83, .75)",
+"rgba(60, 179, 113, .75)",
+"rgba(238, 130, 238, .75)" 
+],
+"tooltip": {
+ "useHTML": true,
+"formatter":  function() { return this.x + ', ' + this.y; }  
+},
+"labels": {
+ "items": [
+ {
+ "html": "An interactive example of Highcharts in rCharts",
+"style": {
+ "left": "20px",
+"top": "20px" 
+} 
+} 
+] 
+},
+"legend": {
+ "align": "right",
+"verticalAlign": "middle",
+"layout": "vertical" 
+},
+"plotOptions": {
+ "column": {
+ "stacking": "normal" 
+},
+"spline": {
+ "dashStyle": "Dash" 
+} 
+},
+"subtitle": {
+ "text": "This is a subtitle" 
+} 
+});
+        });
+    })(jQuery);
+</script>
+
 
 ### Additional methods
 
