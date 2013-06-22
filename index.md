@@ -47,12 +47,12 @@ obj$series(data = 1:3)
 <script type='text/javascript' src=http://code.jquery.com/jquery-1.9.1.min.js></script>
 <script type='text/javascript' src=http://code.highcharts.com/highcharts.js></script>
 <script type='text/javascript' src=http://code.highcharts.com/highcharts-more.js></script>
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d",
 "width":    600,
 "height":    400,
 "credits": {
@@ -70,14 +70,14 @@ obj$series(data = 1:3)
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
 },
 "series": [
  {
  "data": [ 1, 2, 3 ] 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a" 
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
 });
         });
     })(jQuery);
@@ -110,6 +110,30 @@ obj$series(data = list(
 
 As noticed, the chart `type` may as well be included as an attribute, which makes it possible to combine several chart types within the same chart. The series are layered on each other in the same order as they are added, therefore the `spline` will be shown on top of the `columns`.
 
+It is also possible to add all series at once, as a list:
+
+
+```r
+obj$series(list(
+    list(
+        data = 1:3
+    ),
+    list(
+        data = list(c(0,2), c(1,1), c(2,3)), name = "foo"
+    ),
+    list(
+        data = list(
+            list(x = 0, y = 0, foo = "a"),
+            list(x = 1, y = 1, foo = "b"),
+            list(x = 2, y = 3, foo = "c")
+        ), type = "spline"
+    )
+), replace = T)
+```
+
+
+`replace = T` is also included to remove all previously created series. The `replace` argument is available in all `Highcharts` methods as to decide whether to clear or keep all previously set parameters (except for in `series`, its default is always set to `TRUE`).
+
 #### xAxis ([api](http://api.highcharts.com/highcharts#xAxis)|[docs](http://docs.highcharts.com/#axes))
 
 
@@ -127,12 +151,12 @@ obj$yAxis(title = list(text = "Number"))
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
 "width":    600,
 "height":    400,
 "credits": {
@@ -150,7 +174,7 @@ obj$yAxis(title = list(text = "Number"))
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b" 
 },
 "series": [
  {
@@ -185,7 +209,7 @@ obj$yAxis(title = list(text = "Number"))
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 } 
@@ -224,12 +248,12 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
 "width":    600,
 "height":    400,
 "credits": {
@@ -247,7 +271,7 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2" 
 },
 "series": [
  {
@@ -282,7 +306,7 @@ obj$tooltip(useHTML = T, formatter = "#! function() { return this.x + ', ' + thi
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -318,12 +342,12 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
 "width":    600,
 "height":    400,
 "credits": {
@@ -341,7 +365,7 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6" 
 },
 "series": [
  {
@@ -376,7 +400,7 @@ The `items` argument takes an array of items, and that is why we use `list` twic
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -419,12 +443,12 @@ obj$legend(
 
 
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf' class='rChart highcharts'></div>
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
 "width":    600,
 "height":    400,
 "credits": {
@@ -442,7 +466,7 @@ obj$legend(
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf" 
 },
 "series": [
  {
@@ -477,7 +501,7 @@ obj$legend(
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -531,5 +555,8 @@ Although we have covered the most commonly used methods, there are still some th
   - loading ([docs](http://docs.highcharts.com/#loading))
   - navigation ([docs](http://docs.highcharts.com/#navigation))
   - pane ([docs](http://docs.highcharts.com/#pane))
+  
+And custom methods (only available for R users):
+  - data
 
 For more information on how to use these, see the Highcharts API documentation page.

@@ -67,6 +67,28 @@ obj$series(data = list(
 
 As noticed, the chart `type` may as well be included as an attribute, which makes it possible to combine several chart types within the same chart. The series are layered on each other in the same order as they are added, therefore the `spline` will be shown on top of the `columns`.
 
+It is also possible to add all series at once, as a list:
+
+```{r}
+obj$series(list(
+    list(
+        data = 1:3
+    ),
+    list(
+        data = list(c(0,2), c(1,1), c(2,3)), name = "foo"
+    ),
+    list(
+        data = list(
+            list(x = 0, y = 0, foo = "a"),
+            list(x = 1, y = 1, foo = "b"),
+            list(x = 2, y = 3, foo = "c")
+        ), type = "spline"
+    )
+), replace = T)
+```
+
+`replace = T` is also included to remove all previously created series. The `replace` argument is available in all `Highcharts` methods as to decide whether to clear or keep all previously set parameters (except for in `series`, its default is always set to `TRUE`).
+
 #### xAxis ([api](http://api.highcharts.com/highcharts#xAxis)|[docs](http://docs.highcharts.com/#axes))
 
 ```{r}
@@ -160,5 +182,8 @@ Although we have covered the most commonly used methods, there are still some th
   - loading ([docs](http://docs.highcharts.com/#loading))
   - navigation ([docs](http://docs.highcharts.com/#navigation))
   - pane ([docs](http://docs.highcharts.com/#pane))
+  
+And custom methods (only available for R users):
+  - data
 
 For more information on how to use these, see the Highcharts API documentation page.

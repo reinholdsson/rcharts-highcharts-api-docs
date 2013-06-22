@@ -220,13 +220,13 @@ hljs.initHighlightingOnLoad();
 
 <script type='text/javascript' src=http://code.highcharts.com/highcharts-more.js></script>
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d' class='rChart highcharts'></div>
 
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d",
 "width":    600,
 "height":    400,
 "credits": {
@@ -244,14 +244,14 @@ hljs.initHighlightingOnLoad();
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
 },
 "series": [
  {
  "data": [ 1, 2, 3 ] 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7487cb0a" 
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d46aa00d2d" 
 });
         });
     })(jQuery);
@@ -275,6 +275,27 @@ hljs.initHighlightingOnLoad();
 
 <p>As noticed, the chart <code>type</code> may as well be included as an attribute, which makes it possible to combine several chart types within the same chart. The series are layered on each other in the same order as they are added, therefore the <code>spline</code> will be shown on top of the <code>columns</code>.</p>
 
+<p>It is also possible to add all series at once, as a list:</p>
+
+<pre><code class="r">obj$series(list(
+    list(
+        data = 1:3
+    ),
+    list(
+        data = list(c(0,2), c(1,1), c(2,3)), name = &quot;foo&quot;
+    ),
+    list(
+        data = list(
+            list(x = 0, y = 0, foo = &quot;a&quot;),
+            list(x = 1, y = 1, foo = &quot;b&quot;),
+            list(x = 2, y = 3, foo = &quot;c&quot;)
+        ), type = &quot;spline&quot;
+    )
+), replace = T)
+</code></pre>
+
+<p><code>replace = T</code> is also included to remove all previously created series. The <code>replace</code> argument is available in all <code>Highcharts</code> methods as to decide whether to clear or keep all previously set parameters (except for in <code>series</code>, its default is always set to <code>TRUE</code>).</p>
+
 <h4>xAxis (<a href="http://api.highcharts.com/highcharts#xAxis">api</a>|<a href="http://docs.highcharts.com/#axes">docs</a>)</h4>
 
 <pre><code class="r">obj$xAxis(categories = c(&quot;apple&quot;, &quot;orange&quot;, &quot;pear&quot;))
@@ -285,13 +306,13 @@ hljs.initHighlightingOnLoad();
 <pre><code class="r">obj$yAxis(title = list(text = &quot;Number&quot;))
 </code></pre>
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b' class='rChart highcharts'></div>
 
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
 "width":    600,
 "height":    400,
 "credits": {
@@ -309,7 +330,7 @@ hljs.initHighlightingOnLoad();
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b" 
 },
 "series": [
  {
@@ -344,7 +365,7 @@ hljs.initHighlightingOnLoad();
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db7f23394a",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d431c13c0b",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 } 
@@ -372,13 +393,13 @@ hljs.initHighlightingOnLoad();
 <pre><code class="r">obj$tooltip(useHTML = T, formatter = &quot;#! function() { return this.x + &#39;, &#39; + this.y; } !#&quot;)
 </code></pre>
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2' class='rChart highcharts'></div>
 
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
 "width":    600,
 "height":    400,
 "credits": {
@@ -396,7 +417,7 @@ hljs.initHighlightingOnLoad();
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2" 
 },
 "series": [
  {
@@ -431,7 +452,7 @@ hljs.initHighlightingOnLoad();
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db61866a7b",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d454d0fb2",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -461,13 +482,13 @@ hljs.initHighlightingOnLoad();
 
 <p>The <code>items</code> argument takes an array of items, and that is why we use <code>list</code> twice.</p>
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6' class='rChart highcharts'></div>
 
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
 "width":    600,
 "height":    400,
 "credits": {
@@ -485,7 +506,7 @@ hljs.initHighlightingOnLoad();
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6" 
 },
 "series": [
  {
@@ -520,7 +541,7 @@ hljs.initHighlightingOnLoad();
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db3fb8e342",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d464171d6",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -558,13 +579,13 @@ hljs.initHighlightingOnLoad();
 )
 </code></pre>
 
-<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd' class='rChart highcharts'></div>
+<div id='/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf' class='rChart highcharts'></div>
 
 <script type='text/javascript'>
     (function($){
         $(function () {
             var chart = new Highcharts.Chart({
- "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd",
+ "dom": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
 "width":    600,
 "height":    400,
 "credits": {
@@ -582,7 +603,7 @@ hljs.initHighlightingOnLoad();
 "chart": {
  "type": "column",
 "height":    300,
-"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd" 
+"renderTo": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf" 
 },
 "series": [
  {
@@ -617,7 +638,7 @@ hljs.initHighlightingOnLoad();
 "type": "spline" 
 } 
 ],
-"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//RtmprBgyMW/file53db35022bd",
+"id": "/var/folders/l2/zqgw1zvx43q0dnylmjqzz3xh0000gn/T//Rtmp2hM0Hh/file61d432989bcf",
 "xAxis": {
  "categories": [ "apple", "orange", "pear" ] 
 },
@@ -672,6 +693,12 @@ hljs.initHighlightingOnLoad();
 <li>loading (<a href="http://docs.highcharts.com/#loading">docs</a>)</li>
 <li>navigation (<a href="http://docs.highcharts.com/#navigation">docs</a>)</li>
 <li>pane (<a href="http://docs.highcharts.com/#pane">docs</a>)</li>
+</ul>
+
+<p>And custom methods (only available for R users):</p>
+
+<ul>
+<li>data</li>
 </ul>
 
 <p>For more information on how to use these, see the Highcharts API documentation page.</p>
